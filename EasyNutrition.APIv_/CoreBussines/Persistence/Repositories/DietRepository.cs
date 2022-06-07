@@ -22,28 +22,23 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Repositories
                     .Include(p => p.Session)
                     .ToListAsync();
         }
-        public Task AddAsync(Diet diet)
+        public async Task AddAsync(Diet diet)
         {
-            throw new NotImplementedException();
+            await _context.Diets.AddAsync(diet);
         }
-
-        public Task<Diet> FindById(int id)
+        public async Task<Diet> FindById(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Diets.FindAsync(id);
         }
-
-
-
- 
-
-        public void Remove(Diet diet)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Update(Diet diet)
         {
-            throw new NotImplementedException();
+            _context.Diets.Update(diet);
         }
+        public void Remove(Diet diet)
+        {
+            _context.Diets.Remove(diet);
+        }
+
+
     }
 }
