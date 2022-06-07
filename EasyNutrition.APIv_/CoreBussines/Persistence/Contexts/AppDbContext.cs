@@ -12,7 +12,7 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
 
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
-
+        public DbSet<Complaint> Complaints { get; set; }    
     
         protected override void OnModelCreating(ModelBuilder builder)
         {

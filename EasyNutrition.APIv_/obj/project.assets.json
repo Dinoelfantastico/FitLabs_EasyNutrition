@@ -2504,11 +2504,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Noveno ciclo\\Ingenieria de Soft\\DinoTF\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
+      "projectUniqueName": "E:\\Noveno ciclo\\Ingenieria de Soft\\Dino\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
       "projectName": "EasyNutrition.APIv_",
-      "projectPath": "E:\\Noveno ciclo\\Ingenieria de Soft\\DinoTF\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
+      "projectPath": "E:\\Noveno ciclo\\Ingenieria de Soft\\Dino\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
       "packagesPath": "C:\\Users\\Ryzen\\.nuget\\packages\\",
-      "outputPath": "E:\\Noveno ciclo\\Ingenieria de Soft\\DinoTF\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\obj\\",
+      "outputPath": "E:\\Noveno ciclo\\Ingenieria de Soft\\Dino\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ryzen\\AppData\\Roaming\\NuGet\\NuGet.Config",

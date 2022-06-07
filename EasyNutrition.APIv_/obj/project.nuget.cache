@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zYKvdJxNmzvFgDV9IHsxUsmaEhRLud+tes9MYoWOrQPnqWZDs5u3LoqvPgkW4o5he4FisWak5Xsqbj5mU4tNEg==",
+  "dgSpecHash": "M/KN2eg/KyhrtDm7WnTvZfvc+fuLftQKCOrGoAAHQCxml2TV5ueDZbtV2v5dDnGJzVhzgvDc4LFngrjjYMrNtw==",
   "success": true,
-  "projectFilePath": "E:\\Noveno ciclo\\Ingenieria de Soft\\DinoTF\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
+  "projectFilePath": "E:\\Noveno ciclo\\Ingenieria de Soft\\Dino\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ryzen\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Ryzen\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
