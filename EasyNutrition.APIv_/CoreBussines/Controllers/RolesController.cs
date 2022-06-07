@@ -5,6 +5,7 @@ using EasyNutrition.APIv_.CoreBussines.Resources;
 using EasyNutrition.APIv_.Shared.Extentions;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace EasyNutrition.APIv_.CoreBussines.Controllers
 {
@@ -23,7 +24,14 @@ namespace EasyNutrition.APIv_.CoreBussines.Controllers
             _mapper = mapper;
         }
 
+        [SwaggerOperation(
+            Summary = "List all roles",
+            Description = "List of Roles",
+            OperationId = "ListAllRoles",
+            Tags = new[] { "Roles" })]
+        [SwaggerResponse(200, "List of Roles", typeof(IEnumerable<RoleResource>))]
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<RoleResource>), 200)]
         public async Task<IEnumerable<RoleResource>> GetAllAsync()
         {
             var roles = await _roleService.ListAsync();
@@ -32,7 +40,14 @@ namespace EasyNutrition.APIv_.CoreBussines.Controllers
             return resources;
         }
 
+        [SwaggerOperation(
+           Summary = "Add role",
+           Description = "Add new role",
+           OperationId = "AddRole",
+           Tags = new[] { "Roles" })]
+        [SwaggerResponse(200, "Add Roles", typeof(IEnumerable<RoleResource>))]
         [HttpPost]
+        [ProducesResponseType(typeof(IEnumerable<RoleResource>), 200)]
         public async Task<IActionResult> PostAsync([FromBody] SaveRoleResource resource)
         {
             if (!ModelState.IsValid)
@@ -47,8 +62,14 @@ namespace EasyNutrition.APIv_.CoreBussines.Controllers
             return Ok(roleResource);
         }
 
-
+        [SwaggerOperation(
+            Summary = "Update role",
+            Description = "Update a role",
+            OperationId = "UpdateRole",
+            Tags = new[] { "Roles" })]
+        [SwaggerResponse(200, "Update Roles", typeof(IEnumerable<RoleResource>))]
         [HttpPut("{id}")]
+        [ProducesResponseType(typeof(IEnumerable<RoleResource>), 200)]
         public async Task<IActionResult> PutAsync(int id, [FromBody] SaveRoleResource resource)
         {
             var role = _mapper.Map<SaveRoleResource, Role>(resource);
@@ -60,7 +81,14 @@ namespace EasyNutrition.APIv_.CoreBussines.Controllers
             return Ok(roleResource);
         }
 
+        [SwaggerOperation(
+        Summary = "Delete role",
+        Description = "Delete a role",
+        OperationId = "DeleteRole",
+        Tags = new[] { "Roles" })]
+        [SwaggerResponse(200, "Delete Roles", typeof(IEnumerable<RoleResource>))]
         [HttpDelete("{id}")]
+        [ProducesResponseType(typeof(IEnumerable<RoleResource>), 200)]
         public async Task<IActionResult> DeleteAsync(int id)
         {
             var result = await _roleService.DeleteAsync(id);
