@@ -3,6 +3,7 @@ using EasyNutrition.APIv_.CoreBussines.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EasyNutrition.APIv_.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220607224452_SixDatabase")]
+    partial class SixDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,54 +22,6 @@ namespace EasyNutrition.APIv_.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Complaint", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("id");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasColumnName("description");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int")
-                        .HasColumnName("user_id");
-
-                    b.HasKey("Id")
-                        .HasName("p_k_complaint");
-
-                    b.HasIndex("UserId")
-                        .HasDatabaseName("i_x_complaint_user_id");
-
-                    b.ToTable("complaint", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "Descripcion de prueba complaint",
-                            UserId = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "Descripcion de prueba complaint 2",
-                            UserId = 2
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "Descripcion de prueba complaint 3 ",
-                            UserId = 3
-                        });
-                });
 
             modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Diet", b =>
                 {
@@ -763,18 +717,6 @@ namespace EasyNutrition.APIv_.Migrations
                         });
                 });
 
-            modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Complaint", b =>
-                {
-                    b.HasOne("EasyNutrition.APIv_.CoreBussines.Domain.Models.User", "User")
-                        .WithMany("Complaints")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("f_k_complaint__users_user_id");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Diet", b =>
                 {
                     b.HasOne("EasyNutrition.APIv_.CoreBussines.Domain.Models.Session", "Session")
@@ -861,8 +803,6 @@ namespace EasyNutrition.APIv_.Migrations
 
             modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.User", b =>
                 {
-                    b.Navigation("Complaints");
-
                     b.Navigation("Experiences");
 
                     b.Navigation("Schedules");

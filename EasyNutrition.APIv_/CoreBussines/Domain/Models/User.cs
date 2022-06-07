@@ -19,6 +19,9 @@
         public Role Role { get; set; }
 
         public IList<Session> Sessions { get; set; } = new List<Session>();
+        public IList<Experience> Experiences { get; set; } = new List<Experience>();
+        public IList<Schedule> Schedules { get; set; } = new List<Schedule>();
+        public IList<Complaint> Complaints { get; set; } = new List<Complaint>();
 
     }
 }

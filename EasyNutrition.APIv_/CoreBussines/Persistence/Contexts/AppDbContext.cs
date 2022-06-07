@@ -15,6 +15,9 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
         public DbSet<Session> Sessions { get; set; }
         public DbSet<Progress> Progresses { get; set; }
         public DbSet<Diet> Diets { get; set; }
+        public DbSet<Experience> Experiences { get; set; }
+        public DbSet<Schedule> Schedules { get; set; }
+        public DbSet<Complaint> Complaints { get; set; }
 
     
         protected override void OnModelCreating(ModelBuilder builder)
@@ -171,6 +174,86 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
 
 
               );
+
+            //Entidad Experience
+            builder.Entity<Experience>().ToTable("Experience");
+            builder.Entity<Experience>().HasKey(p => p.Id);
+            builder.Entity<Experience>().Property(p => p.Id)
+                .IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Experience>().Property(p => p.Name)
+                .IsRequired().HasMaxLength(50);
+            builder.Entity<Experience>().Property(p => p.Description)
+                .IsRequired().HasMaxLength(50);
+
+            builder.Entity<Experience>()
+             .HasOne(pt => pt.User)
+             .WithMany(p => p.Experiences)
+             .HasForeignKey(pt => pt.UserId);
+
+            // Agregar data a Experience
+            builder.Entity<Experience>().HasData
+               (
+                   new Experience { Id = 1, Name = "Augusto", Description = "Estoy notando los resultados positivos", UserId = 1 },
+                   new Experience { Id = 4, Name = "Hernesto", Description = "Excelentes resultados por las dietas", UserId = 2 }
+
+               );
+
+            // Entidad Schedule
+
+            builder.Entity<Schedule>().ToTable("Schedules");
+            builder.Entity<Schedule>().HasKey(p => p.Id);
+            builder.Entity<Schedule>().Property(p => p.Id);
+            builder.Entity<Schedule>().Property(p => p.StartAt)
+                .IsRequired();
+            builder.Entity<Schedule>().Property(p => p.EndAt)
+                  .IsRequired();
+            builder.Entity<Schedule>().Property(p => p.State)
+                .IsRequired();
+
+
+            builder.Entity<Schedule>()
+             .HasOne(pt => pt.User)
+             .WithMany(p => p.Schedules)
+             .HasForeignKey(pt => pt.UserId);
+
+            builder.Entity<Schedule>().HasData
+                 (
+                     new Schedule { Id = 1, StartAt = "Friday, February 22, 2019 2:00:55 PM", EndAt = "Friday, February 22, 2019 2:40:55 PM", State = true, UserId = 1 },
+                     new Schedule { Id = 2, StartAt = "Friday, February 23, 2019 5:00:55 PM", EndAt = "Friday, February 23, 2019 6:40:55 PM", State = true, UserId = 2 },
+                     new Schedule { Id = 3, StartAt = "Friday, February 24, 2019 7:00:55 PM", EndAt = "Friday, February 24, 2019 8:40:55 PM", State = true, UserId = 3 },
+                     new Schedule { Id = 4, StartAt = "Friday, February 25, 2019 9:00:55 PM", EndAt = "Friday, February 25, 2019 10:40:55 PM", State = true, UserId = 4 },
+                     new Schedule { Id = 5, StartAt = "Friday, February 03, 2019 2:00:55 PM", EndAt = "Friday, February 03, 2019 3:40:55 PM", State = true, UserId = 5 },
+                     new Schedule { Id = 6, StartAt = "Friday, February 18, 2019 5:00:55 PM", EndAt = "Friday, February 18, 2019 6:40:55 PM", State = true, UserId = 6 },
+                     new Schedule { Id = 7, StartAt = "Friday, February 02, 2019 3:00:55 PM", EndAt = "Friday, February 02, 2019 4:40:55 PM", State = true, UserId = 7 },
+                     new Schedule { Id = 8, StartAt = "Friday, February 10, 2019 2:00:55 PM", EndAt = "Friday, February 10, 2019 3:40:55 PM", State = true, UserId = 8 },
+                     new Schedule { Id = 9, StartAt = "Friday, February 11, 2019 1:00:55 PM", EndAt = "Friday, February 11, 2019 2:40:55 PM", State = true, UserId = 9 },
+                     new Schedule { Id = 10, StartAt = "Friday, February 13, 2019 5:00:55 PM", EndAt = "Friday, February 13, 2019 6:40:55 PM", State = true, UserId = 10 }
+
+
+                 );
+
+
+            //Entidad Complaint
+            builder.Entity<Complaint>().ToTable("Complaint");
+            builder.Entity<Complaint>().HasKey(p => p.Id);
+            builder.Entity<Complaint>().Property(p => p.Id)
+                .IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Complaint>().Property(p => p.Description)
+                .IsRequired().HasMaxLength(50);
+
+            builder.Entity<Complaint>()
+             .HasOne(pt => pt.User)
+             .WithMany(p => p.Complaints)
+             .HasForeignKey(pt => pt.UserId);
+
+
+            // Agregar data a Complaint
+            builder.Entity<Complaint>().HasData
+               (
+                   new Complaint { Id = 1, Description = "Descripcion de prueba complaint", UserId = 1 },
+                   new Complaint { Id = 2, Description = "Descripcion de prueba complaint 2", UserId = 2 },
+                   new Complaint { Id = 3, Description = "Descripcion de prueba complaint 3 ", UserId = 3 }
+               ); ;
 
             builder.UseSnakeCaseNamingConvention();
         }

@@ -46,6 +46,12 @@ builder.Services.AddScoped<IProgressRepository, ProgressRepository>();
 builder.Services.AddScoped<IProgressService, ProgressService>();
 builder.Services.AddScoped<IDietRepository, DietRepository>();
 builder.Services.AddScoped<IDietService, DietService>();
+builder.Services.AddScoped<IExperienceRepository, ExperienceRepository>();
+builder.Services.AddScoped<IExperienceService, ExperienceService>();
+builder.Services.AddScoped<IScheduleRepository, ScheduleRepository>();
+builder.Services.AddScoped<IScheduleService, ScheduleService>();
+builder.Services.AddScoped<IComplaintRepository, ComplaintRepository>();
+builder.Services.AddScoped<IComplaintService, ComplaintService>();
 
 builder.Services.AddAutoMapper(typeof(ModelToResourceProfile),
     typeof(ResourceToModelProfile));

@@ -3,6 +3,7 @@ using EasyNutrition.APIv_.CoreBussines.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EasyNutrition.APIv_.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220607222144_FiveDatabase")]
+    partial class FiveDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,54 +22,6 @@ namespace EasyNutrition.APIv_.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Complaint", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("id");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasColumnName("description");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int")
-                        .HasColumnName("user_id");
-
-                    b.HasKey("Id")
-                        .HasName("p_k_complaint");
-
-                    b.HasIndex("UserId")
-                        .HasDatabaseName("i_x_complaint_user_id");
-
-                    b.ToTable("complaint", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "Descripcion de prueba complaint",
-                            UserId = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "Descripcion de prueba complaint 2",
-                            UserId = 2
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "Descripcion de prueba complaint 3 ",
-                            UserId = 3
-                        });
-                });
 
             modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Diet", b =>
                 {
@@ -290,124 +244,6 @@ namespace EasyNutrition.APIv_.Migrations
                         {
                             Id = 4,
                             Name = "Invitado"
-                        });
-                });
-
-            modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Schedule", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("id");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("EndAt")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("end_at");
-
-                    b.Property<string>("StartAt")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("start_at");
-
-                    b.Property<bool>("State")
-                        .HasColumnType("bit")
-                        .HasColumnName("state");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int")
-                        .HasColumnName("user_id");
-
-                    b.HasKey("Id")
-                        .HasName("p_k_schedules");
-
-                    b.HasIndex("UserId")
-                        .HasDatabaseName("i_x_schedules_user_id");
-
-                    b.ToTable("schedules", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            EndAt = "Friday, February 22, 2019 2:40:55 PM",
-                            StartAt = "Friday, February 22, 2019 2:00:55 PM",
-                            State = true,
-                            UserId = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            EndAt = "Friday, February 23, 2019 6:40:55 PM",
-                            StartAt = "Friday, February 23, 2019 5:00:55 PM",
-                            State = true,
-                            UserId = 2
-                        },
-                        new
-                        {
-                            Id = 3,
-                            EndAt = "Friday, February 24, 2019 8:40:55 PM",
-                            StartAt = "Friday, February 24, 2019 7:00:55 PM",
-                            State = true,
-                            UserId = 3
-                        },
-                        new
-                        {
-                            Id = 4,
-                            EndAt = "Friday, February 25, 2019 10:40:55 PM",
-                            StartAt = "Friday, February 25, 2019 9:00:55 PM",
-                            State = true,
-                            UserId = 4
-                        },
-                        new
-                        {
-                            Id = 5,
-                            EndAt = "Friday, February 03, 2019 3:40:55 PM",
-                            StartAt = "Friday, February 03, 2019 2:00:55 PM",
-                            State = true,
-                            UserId = 5
-                        },
-                        new
-                        {
-                            Id = 6,
-                            EndAt = "Friday, February 18, 2019 6:40:55 PM",
-                            StartAt = "Friday, February 18, 2019 5:00:55 PM",
-                            State = true,
-                            UserId = 6
-                        },
-                        new
-                        {
-                            Id = 7,
-                            EndAt = "Friday, February 02, 2019 4:40:55 PM",
-                            StartAt = "Friday, February 02, 2019 3:00:55 PM",
-                            State = true,
-                            UserId = 7
-                        },
-                        new
-                        {
-                            Id = 8,
-                            EndAt = "Friday, February 10, 2019 3:40:55 PM",
-                            StartAt = "Friday, February 10, 2019 2:00:55 PM",
-                            State = true,
-                            UserId = 8
-                        },
-                        new
-                        {
-                            Id = 9,
-                            EndAt = "Friday, February 11, 2019 2:40:55 PM",
-                            StartAt = "Friday, February 11, 2019 1:00:55 PM",
-                            State = true,
-                            UserId = 9
-                        },
-                        new
-                        {
-                            Id = 10,
-                            EndAt = "Friday, February 13, 2019 6:40:55 PM",
-                            StartAt = "Friday, February 13, 2019 5:00:55 PM",
-                            State = true,
-                            UserId = 10
                         });
                 });
 
@@ -763,18 +599,6 @@ namespace EasyNutrition.APIv_.Migrations
                         });
                 });
 
-            modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Complaint", b =>
-                {
-                    b.HasOne("EasyNutrition.APIv_.CoreBussines.Domain.Models.User", "User")
-                        .WithMany("Complaints")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("f_k_complaint__users_user_id");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Diet", b =>
                 {
                     b.HasOne("EasyNutrition.APIv_.CoreBussines.Domain.Models.Session", "Session")
@@ -809,18 +633,6 @@ namespace EasyNutrition.APIv_.Migrations
                         .HasConstraintName("f_k_progresses__session_session_id");
 
                     b.Navigation("Session");
-                });
-
-            modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Schedule", b =>
-                {
-                    b.HasOne("EasyNutrition.APIv_.CoreBussines.Domain.Models.User", "User")
-                        .WithMany("Schedules")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("f_k_schedules__users_user_id");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Session", b =>
@@ -861,11 +673,7 @@ namespace EasyNutrition.APIv_.Migrations
 
             modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.User", b =>
                 {
-                    b.Navigation("Complaints");
-
                     b.Navigation("Experiences");
-
-                    b.Navigation("Schedules");
 
                     b.Navigation("Sessions");
                 });

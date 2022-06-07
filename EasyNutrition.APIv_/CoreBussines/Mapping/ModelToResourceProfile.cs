@@ -16,6 +16,10 @@ namespace EasyNutrition.APIv_.CoreBussines.Mapping
             CreateMap<Progress, ProgressResource>();
             CreateMap<Diet, DietResource>();
 
+            CreateMap<Experience, ExperienceResource>();
+            CreateMap<Schedule, ScheduleResource>();
+            CreateMap<Complaint, ComplaintResource>();
+
         }
 
     }
