@@ -13,6 +13,8 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Session> Sessions { get; set; }
+        public DbSet<Progress> Progresses { get; set; }
+        public DbSet<Diet> Diets { get; set; }
 
     
         protected override void OnModelCreating(ModelBuilder builder)
@@ -127,25 +129,48 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
 
                   );
 
-          
+
+            //Entidad Progress
+            builder.Entity<Progress>().ToTable("Progresses");
+            builder.Entity<Progress>().HasKey(p => p.Id);
+            builder.Entity<Progress>().Property(p => p.Id)
+                .IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Progress>().Property(p => p.Description)
+                .IsRequired().HasMaxLength(500);
+
+            // Agregar data a progres
+            builder.Entity<Progress>().HasData
+              (
+                  new Progress { Id = 1, Description = "Bajó 4 kilos", SessionId = 1 },
+                  new Progress { Id = 2, Description = "Aumentó su masa en 3 kilos", SessionId = 2 },
+                  new Progress { Id = 3, Description = "Logró bajar mi porcentaje de grasa a un 12%", SessionId = 3 },
+                  new Progress { Id = 4, Description = "Aumentó 1kg de masa muscular", SessionId = 4 },
+                  new Progress { Id = 5, Description = "Aumentó su masa en 2 kilos", SessionId = 5 }
+
+              );
 
 
+            //Entidad Diet
+            builder.Entity<Diet>().ToTable("Diets");
+            builder.Entity<Diet>().HasKey(p => p.Id);
+            builder.Entity<Diet>().Property(p => p.Id)
+                .IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Diet>().Property(p => p.Title)
+                .IsRequired().HasMaxLength(50);
+            builder.Entity<Diet>().Property(p => p.Description)
+                .IsRequired().HasMaxLength(500);
+
+            // Agregar data a Diet
+            builder.Entity<Diet>().HasData
+              (
+                  new Diet { Id = 1, Title = "Dieta Vegetariana", Description = "Lunes: x Martes: x Miercoles: x", SessionId = 1 },
+                  new Diet { Id = 2, Title = "Dieta para aumentar masa musuclar", Description = "Lunes: x Martes: x Miercoles: x", SessionId = 2 },
+                  new Diet { Id = 3, Title = "Dieta miniCut", Description = "Lunes: x Martes: x Miercoles: x", SessionId = 3 },
+                  new Diet { Id = 4, Title = "Dieta Tonificación Muscular", Description = "Lunes: x Martes: x Miercoles: x", SessionId = 4 },
+                  new Diet { Id = 5, Title = "Dieta definición", Description = "Lunes: x Martes: x Miercoles: x", SessionId = 5 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+              );
 
             builder.UseSnakeCaseNamingConvention();
         }

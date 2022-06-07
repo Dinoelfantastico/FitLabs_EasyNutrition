@@ -3,6 +3,7 @@ using EasyNutrition.APIv_.CoreBussines.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EasyNutrition.APIv_.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220607212705_thirdDatabase")]
+    partial class thirdDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,77 +22,6 @@ namespace EasyNutrition.APIv_.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Diet", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("id");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)")
-                        .HasColumnName("description");
-
-                    b.Property<int>("SessionId")
-                        .HasColumnType("int")
-                        .HasColumnName("session_id");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasColumnName("title");
-
-                    b.HasKey("Id")
-                        .HasName("p_k_diets");
-
-                    b.HasIndex("SessionId")
-                        .HasDatabaseName("i_x_diets_session_id");
-
-                    b.ToTable("diets", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "Lunes: x Martes: x Miercoles: x",
-                            SessionId = 1,
-                            Title = "Dieta Vegetariana"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "Lunes: x Martes: x Miercoles: x",
-                            SessionId = 2,
-                            Title = "Dieta para aumentar masa musuclar"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "Lunes: x Martes: x Miercoles: x",
-                            SessionId = 3,
-                            Title = "Dieta miniCut"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Description = "Lunes: x Martes: x Miercoles: x",
-                            SessionId = 4,
-                            Title = "Dieta Tonificación Muscular"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Description = "Lunes: x Martes: x Miercoles: x",
-                            SessionId = 5,
-                            Title = "Dieta definición"
-                        });
-                });
 
             modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Progress", b =>
                 {
@@ -545,18 +476,6 @@ namespace EasyNutrition.APIv_.Migrations
                             RoleId = 4,
                             Username = "Angel Gavidia"
                         });
-                });
-
-            modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Diet", b =>
-                {
-                    b.HasOne("EasyNutrition.APIv_.CoreBussines.Domain.Models.Session", "Session")
-                        .WithMany()
-                        .HasForeignKey("SessionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("f_k_diets__session_session_id");
-
-                    b.Navigation("Session");
                 });
 
             modelBuilder.Entity("EasyNutrition.APIv_.CoreBussines.Domain.Models.Progress", b =>

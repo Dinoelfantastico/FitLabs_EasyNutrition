@@ -42,6 +42,10 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUnitOfwork, UnitOfwork>();
 builder.Services.AddScoped<ISessionRepository, SessionRepository>();
 builder.Services.AddScoped<ISessionService, SessionService>();
+builder.Services.AddScoped<IProgressRepository, ProgressRepository>();
+builder.Services.AddScoped<IProgressService, ProgressService>();
+builder.Services.AddScoped<IDietRepository, DietRepository>();
+builder.Services.AddScoped<IDietService, DietService>();
 
 builder.Services.AddAutoMapper(typeof(ModelToResourceProfile),
     typeof(ResourceToModelProfile));

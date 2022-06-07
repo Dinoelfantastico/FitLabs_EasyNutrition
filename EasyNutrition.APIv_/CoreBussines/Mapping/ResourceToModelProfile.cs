@@ -12,6 +12,8 @@ namespace EasyNutrition.APIv_.CoreBussines.Mapping
             CreateMap<SaveUserResource, User>();
 
             CreateMap<SaveSessionResource, Session>();
+            CreateMap<SaveProgressResource, ProgressResource>();
+            CreateMap<SaveDietResource, Diet>();
            
         }
 
