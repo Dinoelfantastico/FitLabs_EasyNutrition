@@ -13,6 +13,7 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Session> Sessions { get; set; }
+        public DbSet<Diet> Diets { get; set; }
 
     
         protected override void OnModelCreating(ModelBuilder builder)
@@ -127,25 +128,28 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
 
                   );
 
-          
+
+            //Entidad Diet
+            builder.Entity<Diet>().ToTable("Diets");
+            builder.Entity<Diet>().HasKey(p => p.Id);
+            builder.Entity<Diet>().Property(p => p.Id)
+                .IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Diet>().Property(p => p.Title)
+                .IsRequired().HasMaxLength(50);
+            builder.Entity<Diet>().Property(p => p.Description)
+                .IsRequired().HasMaxLength(500);
+
+            // Agregar data a Diet
+            builder.Entity<Diet>().HasData
+              (
+                  new Diet { Id = 1, Title = "Dieta Vegetariana", Description = "Lunes: x Martes: x Miercoles: x", SessionId = 1 },
+                  new Diet { Id = 2, Title = "Dieta para aumentar masa musuclar", Description = "Lunes: x Martes: x Miercoles: x", SessionId = 2 },
+                  new Diet { Id = 3, Title = "Dieta miniCut", Description = "Lunes: x Martes: x Miercoles: x", SessionId = 3 },
+                  new Diet { Id = 4, Title = "Dieta Tonificación Muscular", Description = "Lunes: x Martes: x Miercoles: x", SessionId = 4 },
+                  new Diet { Id = 5, Title = "Dieta definición", Description = "Lunes: x Martes: x Miercoles: x", SessionId = 5 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+              );
 
             builder.UseSnakeCaseNamingConvention();
         }
