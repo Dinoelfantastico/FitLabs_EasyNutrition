@@ -13,6 +13,7 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
         public object Diets { get; internal set; }
+        public object Schedules { get; internal set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
