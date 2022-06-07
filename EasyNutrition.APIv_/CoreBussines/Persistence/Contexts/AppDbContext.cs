@@ -12,6 +12,7 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
 
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Session> Sessions { get; set; }
 
     
         protected override void OnModelCreating(ModelBuilder builder)
@@ -90,6 +91,60 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
                new User { Id = 10, Username = "Angel Gavidia", Password = "ZNrr&l*xeucG2W(*D", Name = "Angel", Lastname = "Gavidia", Birthday = "10/10/1989", Email = "angel123@gmail.com", Phone = "94861546", Address = "Alfonso Ugarte 123", Active = true, Linkedin = "https:\\afjaowjfiawj.com", RoleId = 4 }
 
           );
+
+            //Entidad Session
+
+            builder.Entity<Session>().ToTable("Session");
+            builder.Entity<Session>().HasKey(p => p.Id);
+            builder.Entity<Session>().Property(p => p.Id)
+                  .IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Session>().Property(p => p.StartAt)
+                .IsRequired();
+            builder.Entity<Session>().Property(p => p.EndAt)
+                  .IsRequired();
+            builder.Entity<Session>().Property(p => p.Link)
+                  .IsRequired().HasMaxLength(100);
+
+            builder.Entity<Session>()
+             .HasOne(pt => pt.User)
+             .WithMany(p => p.Sessions)
+             .HasForeignKey(pt => pt.UserId);
+
+
+            // Agregar data a Session
+            builder.Entity<Session>().HasData
+                  (
+                      new Session { Id = 1, StartAt = "Monday, March 24,2019 17:00:00 PM", EndAt = "Monday, March 24 ,2019 18:00:00 PM", Link = "https", UserId = 1 },
+                      new Session { Id = 2, StartAt = "Thursday, March 26,2019 20:00:00 PM", EndAt = "Thurday, March 26 ,2019 21:00:00 PM", Link = "https", UserId = 2 },
+                      new Session { Id = 3, StartAt = "Monday, March 13,2019 17:00:00 PM", EndAt = "Monday, March 13 ,2019 18:00:00 PM", Link = "https", UserId = 3 },
+                      new Session { Id = 4, StartAt = "Monday, March 24,2019 16:00:00 PM", EndAt = "Monday, March 24 ,2019 17:00:00 PM", Link = "https", UserId = 4 },
+                      new Session { Id = 5, StartAt = "Monday, March 24,2019 17:00:00 PM", EndAt = "Monday, March 24 ,2019 18:00:00 PM", Link = "https", UserId = 5 },
+                      new Session { Id = 6, StartAt = "Monday, March 24,2019 17:00:00 PM", EndAt = "Monday, March 24 ,2019 18:00:00 PM", Link = "https", UserId = 6 },
+                      new Session { Id = 7, StartAt = "Thursday, March 26,2019 20:00:00 PM", EndAt = "Thurday, March 26 ,2019 21:00:00 PM", Link = "https", UserId = 7 },
+                      new Session { Id = 8, StartAt = "Monday, March 13,2019 17:00:00 PM", EndAt = "Monday, March 13 ,2019 18:00:00 PM", Link = "https", UserId = 8 },
+                      new Session { Id = 9, StartAt = "Monday, March 24,2019 16:00:00 PM", EndAt = "Monday, March 24 ,2019 17:00:00 PM", Link = "https", UserId = 9 },
+                      new Session { Id = 10, StartAt = "Monday, March 24,2019 17:00:00 PM", EndAt = "Monday, March 24 ,2019 18:00:00 PM", Link = "https", UserId = 10 }
+
+                  );
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             builder.UseSnakeCaseNamingConvention();
