@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dino\\Dropbox\\Mi PC (LAPTOP-AEERCSS6)\\Downloads\\FitLabs_EasyNutrition-app-01-user-management\\EasyNutrition.APIv_.csproj": {}
+    "D:\\Trabajo_Ingenieria de Software\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dino\\Dropbox\\Mi PC (LAPTOP-AEERCSS6)\\Downloads\\FitLabs_EasyNutrition-app-01-user-management\\EasyNutrition.APIv_.csproj": {
+    "D:\\Trabajo_Ingenieria de Software\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dino\\Dropbox\\Mi PC (LAPTOP-AEERCSS6)\\Downloads\\FitLabs_EasyNutrition-app-01-user-management\\EasyNutrition.APIv_.csproj",
+        "projectUniqueName": "D:\\Trabajo_Ingenieria de Software\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
         "projectName": "EasyNutrition.APIv_",
-        "projectPath": "C:\\Users\\Dino\\Dropbox\\Mi PC (LAPTOP-AEERCSS6)\\Downloads\\FitLabs_EasyNutrition-app-01-user-management\\EasyNutrition.APIv_.csproj",
+        "projectPath": "D:\\Trabajo_Ingenieria de Software\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
         "packagesPath": "C:\\Users\\Dino\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dino\\Dropbox\\Mi PC (LAPTOP-AEERCSS6)\\Downloads\\FitLabs_EasyNutrition-app-01-user-management\\obj\\",
+        "outputPath": "D:\\Trabajo_Ingenieria de Software\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
