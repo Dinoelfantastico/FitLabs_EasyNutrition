@@ -18,6 +18,8 @@ namespace EasyNutrition.APIv_.CoreBussines.Mapping
             CreateMap<SaveExperienceResource, Experience>();
             CreateMap<SaveScheduleResource, Schedule>();
             CreateMap<SaveComplaintResource, Complaint>();
+
+            CreateMap<SaveSubscriptionResource, Subscription>();
            
         }
 

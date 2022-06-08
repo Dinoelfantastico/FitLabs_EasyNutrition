@@ -11,7 +11,6 @@ namespace EasyNutrition.APIv_.CoreBussines.Domain.Services
         Task<SessionResponce> GetByIdAsync(int id);
         Task<SessionResponce> SaveAsync(Session session);
         Task<SessionResponce> UpdateAsync(int id, Session session);
-
         Task<SessionResponce> DeleteAsync(int id);
     }
 }

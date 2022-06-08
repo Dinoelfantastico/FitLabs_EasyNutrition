@@ -18,6 +18,7 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
         public DbSet<Experience> Experiences { get; set; }
         public DbSet<Schedule> Schedules { get; set; }
         public DbSet<Complaint> Complaints { get; set; }
+        public DbSet<Subscription> Subscriptions { get; set; }
 
     
         protected override void OnModelCreating(ModelBuilder builder)
@@ -253,7 +254,42 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
                    new Complaint { Id = 1, Description = "Descripcion de prueba complaint", UserId = 1 },
                    new Complaint { Id = 2, Description = "Descripcion de prueba complaint 2", UserId = 2 },
                    new Complaint { Id = 3, Description = "Descripcion de prueba complaint 3 ", UserId = 3 }
-               ); ;
+               );
+
+
+
+            // Entidad Subscription
+
+            builder.Entity<Subscription>().ToTable("Subscriptions");
+            builder.Entity<Subscription>().HasKey(p => p.Id);
+            builder.Entity<Subscription>().Property(p => p.Id);
+            builder.Entity<Subscription>().Property(p => p.MaxSessions)
+                .IsRequired();
+            builder.Entity<Subscription>().Property(p => p.Price)
+                  .IsRequired();
+            builder.Entity<Subscription>().Property(p => p.Active)
+                .IsRequired();
+
+
+            builder.Entity<Subscription>()
+             .HasOne(pt => pt.User)
+             .WithMany(p => p.Subscriptions)
+             .HasForeignKey(pt => pt.UserId);
+
+            // Agregar data a Subscription
+            builder.Entity<Subscription>().HasData
+                 (
+                     new Subscription { Id = 1, MaxSessions = 4, Price = 10, Active = true, UserId = 1 },
+                     new Subscription { Id = 2, MaxSessions = 1, Price = 13, Active = true, UserId = 2 },
+                     new Subscription { Id = 3, MaxSessions = 4, Price = 10, Active = true, UserId = 3 },
+                     new Subscription { Id = 4, MaxSessions = 4, Price = 10, Active = true, UserId = 4 },
+                     new Subscription { Id = 5, MaxSessions = 4, Price = 10, Active = true, UserId = 5 },
+                     new Subscription { Id = 6, MaxSessions = 4, Price = 10, Active = true, UserId = 6 },
+                     new Subscription { Id = 7, MaxSessions = 4, Price = 10, Active = true, UserId = 7 },
+                     new Subscription { Id = 8, MaxSessions = 4, Price = 10, Active = true, UserId = 8 },
+                     new Subscription { Id = 9, MaxSessions = 4, Price = 10, Active = true, UserId = 9 },
+                     new Subscription { Id = 10, MaxSessions = 4, Price = 10, Active = true, UserId = 10 }
+                 );
 
             builder.UseSnakeCaseNamingConvention();
         }

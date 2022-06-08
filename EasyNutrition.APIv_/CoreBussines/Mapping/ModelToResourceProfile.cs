@@ -20,6 +20,8 @@ namespace EasyNutrition.APIv_.CoreBussines.Mapping
             CreateMap<Schedule, ScheduleResource>();
             CreateMap<Complaint, ComplaintResource>();
 
+            CreateMap<Subscription, SubscriptionResource>();
+
         }
 
     }
