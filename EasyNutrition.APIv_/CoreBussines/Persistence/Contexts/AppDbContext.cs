@@ -15,6 +15,8 @@ namespace EasyNutrition.APIv_.CoreBussines.Persistence.Contexts
         public DbSet<Session> Sessions { get; set; }
         public DbSet<Diet> Diets { get; set; }
 
+        public DbSet<Progress> Progresses { get; set; } 
+
     
         protected override void OnModelCreating(ModelBuilder builder)
         {
