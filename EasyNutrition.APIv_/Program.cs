@@ -16,7 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 //var connectionStrings = builder.Configuration.GetConnectionString("DefaulConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -76,6 +76,14 @@ options.SwaggerDoc("v1", new OpenApiInfo
 
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:4200/");
+                      });
+});
 
 var app = builder.Build();
 
@@ -92,6 +100,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(options =>
+{
+    options.WithOrigins("http://localhost:4200");
+    options.AllowAnyMethod();
+    options.AllowAnyHeader();
+});
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
