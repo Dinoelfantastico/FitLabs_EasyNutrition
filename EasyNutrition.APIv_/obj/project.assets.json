@@ -2499,24 +2499,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dino\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Ryzen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dino\\Dropbox\\Mi PC (LAPTOP-AEERCSS6)\\Downloads\\Trabajo TB3\\FitLabs_EasyNutrition-app-01-user-management\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
+      "projectUniqueName": "E:\\TF-ING\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
       "projectName": "EasyNutrition.APIv_",
-      "projectPath": "C:\\Users\\Dino\\Dropbox\\Mi PC (LAPTOP-AEERCSS6)\\Downloads\\Trabajo TB3\\FitLabs_EasyNutrition-app-01-user-management\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
-      "packagesPath": "C:\\Users\\Dino\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dino\\Dropbox\\Mi PC (LAPTOP-AEERCSS6)\\Downloads\\Trabajo TB3\\FitLabs_EasyNutrition-app-01-user-management\\EasyNutrition.APIv_\\obj\\",
+      "projectPath": "E:\\TF-ING\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\EasyNutrition.APIv_.csproj",
+      "packagesPath": "C:\\Users\\Ryzen\\.nuget\\packages\\",
+      "outputPath": "E:\\TF-ING\\FitLabs_EasyNutrition\\EasyNutrition.APIv_\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Dino\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Ryzen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -281,3 +281,153 @@ C:\Users\Dino\Dropbox\Mi PC (LAPTOP-AEERCSS6)\Downloads\Trabajo TB3\FitLabs_Easy
 C:\Users\Dino\Dropbox\Mi PC (LAPTOP-AEERCSS6)\Downloads\Trabajo TB3\FitLabs_EasyNutrition-app-01-user-management\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.pdb
 C:\Users\Dino\Dropbox\Mi PC (LAPTOP-AEERCSS6)\Downloads\Trabajo TB3\FitLabs_EasyNutrition-app-01-user-management\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.genruntimeconfig.cache
 C:\Users\Dino\Dropbox\Mi PC (LAPTOP-AEERCSS6)\Downloads\Trabajo TB3\FitLabs_EasyNutrition-app-01-user-management\EasyNutrition.APIv_\obj\Debug\net6.0\ref\EasyNutrition.APIv_.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\appsettings.Development.json
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\appsettings.json
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\libman.json
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\EasyNutrition.APIv_.exe
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\EasyNutrition.APIv_.deps.json
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\EasyNutrition.APIv_.runtimeconfig.json
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\EasyNutrition.APIv_.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\EasyNutrition.APIv_.pdb
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\AutoMapper.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Google.Protobuf.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Humanizer.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\K4os.Compression.LZ4.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\MySql.Data.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Ubiety.Dns.Core.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\ZstdNet.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\MySql.EntityFrameworkCore.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.csproj.AssemblyReference.cache
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.GeneratedMSBuildEditorConfig.editorconfig
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.AssemblyInfoInputs.cache
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.AssemblyInfo.cs
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.csproj.CoreCompileInputs.cache
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.MvcApplicationPartsAssemblyInfo.cs
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.MvcApplicationPartsAssemblyInfo.cache
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\staticwebassets.build.json
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\staticwebassets.development.json
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\scopedcss\bundle\EasyNutrition.APIv_.styles.css
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.csproj.CopyComplete
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\refint\EasyNutrition.APIv_.dll
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.pdb
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.genruntimeconfig.cache
+E:\Nueva carpeta (2)\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\ref\EasyNutrition.APIv_.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\appsettings.Development.json
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\appsettings.json
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\libman.json
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\EasyNutrition.APIv_.exe
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\EasyNutrition.APIv_.deps.json
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\EasyNutrition.APIv_.runtimeconfig.json
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\EasyNutrition.APIv_.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\EasyNutrition.APIv_.pdb
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\AutoMapper.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Google.Protobuf.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Humanizer.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\K4os.Compression.LZ4.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\MySql.Data.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Ubiety.Dns.Core.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\ZstdNet.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\MySql.EntityFrameworkCore.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.csproj.AssemblyReference.cache
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.GeneratedMSBuildEditorConfig.editorconfig
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.AssemblyInfoInputs.cache
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.AssemblyInfo.cs
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.csproj.CoreCompileInputs.cache
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.MvcApplicationPartsAssemblyInfo.cs
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.MvcApplicationPartsAssemblyInfo.cache
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\staticwebassets.build.json
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\staticwebassets.development.json
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\scopedcss\bundle\EasyNutrition.APIv_.styles.css
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.csproj.CopyComplete
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\refint\EasyNutrition.APIv_.dll
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.pdb
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\EasyNutrition.APIv_.genruntimeconfig.cache
+E:\TF-ING\FitLabs_EasyNutrition\EasyNutrition.APIv_\obj\Debug\net6.0\ref\EasyNutrition.APIv_.dll
